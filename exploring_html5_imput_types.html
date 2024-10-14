@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exploring New HTML5 Input Types</title>
+    </head>
+    <body>
+        <!--Task 1-->
+        <form>
+            <label for="user-email">Email Address:</label>
+            <input type="email" name="user-email" id="user-email" placeholder="Enter your email address" required>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <!--Task 2-->
+        <form>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="50" step="1" placeholder="1-10" required>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <!--Task 3-->
+        <form action="/submit" method="post">
+            <label for="date">Date:</label>
+            <input type="text" name="date" id="date" placeholder="Select a date" onfocus="(this.type='date')" required>
+            
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <!--Task 4-->
+        <form>
+            <label for="rating">Rating (1 to 10):</label>
+            <input type="range" name="rating" id="rating" min="1" max="10" value="5" oninput="this.nextElementSibling.value=this.value">
+            <output>5</output>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <!--Task 5 (BONUS)-->
+        <form>
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" name="favcolor" id="favcolor" value="#1E90FF" placeholder="Select your favorite color">
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
