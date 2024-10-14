@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exploring New HTML5 Input Types</title>
+        <title>Module 7 Lesson 3 Assignment</title>
     </head>
     <body>
-        <!--Task 1-->
+        <h2>Exploring New HTML5 Input Types</h2>
+        <!--Number 1 Task 1-->
         <form>
             <label for="user-email">Email Address:</label>
             <input type="email" name="user-email" id="user-email" placeholder="Enter your email address" required>
@@ -12,15 +13,15 @@
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
-        <!--Task 2-->
+        <!--Number 1 Task 2-->
         <form>
             <label for="quantity">Quantity:</label>
-            <input type="number" name="quantity" id="quantity" min="1" max="50" step="1" placeholder="1-10" required>
+            <input type="number" name="quantity" id="quantity" min="1" max="50" step="1" placeholder="1-50" required>
 
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
-        <!--Task 3-->
+        <!--Number 1 Task 3-->
         <form action="/submit" method="post">
             <label for="date">Date:</label>
             <input type="text" name="date" id="date" placeholder="Select a date" onfocus="(this.type='date')" required>
@@ -28,7 +29,7 @@
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
-        <!--Task 4-->
+        <!--Number 1 Task 4-->
         <form>
             <label for="rating">Rating (1 to 10):</label>
             <input type="range" name="rating" id="rating" min="1" max="10" value="5" oninput="this.nextElementSibling.value=this.value">
@@ -37,10 +38,41 @@
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
-        <!--Task 5 (BONUS)-->
+        <!--Number 1 Task 5 (BONUS)-->
         <form>
             <label for="favcolor">Favorite Color:</label>
             <input type="color" name="favcolor" id="favcolor" value="#1E90FF" placeholder="Select your favorite color">
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <h2>Building a Comprehensive Web Form</h2>
+        <!--Number 2 Task 1 and 2-->
+        <form>
+            <label for="programinglanguage">Pick your Favorite Programing Language:</label>
+            <select name="programinglanguage" id="programinglanguage">
+                <option value="blank" selected>Select an option</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="sql">SQL</option>
+            </select>
+
+            <label>Level of Expertise:</label>
+            <input type="radio" name="expertise" id="beginner" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" name="expertise" id="intermidiate" value="intermidiate">
+            <label for="intermidiate">Intermidiate</label>
+            <input type="radio" name="expertise" id="advanced" value="advanced">
+            <label for="advanced">Advanced</label>
+            <br>
+            <label>Check your prefered development platforms:</label>
+            <input type="checkbox" id="web" name="web" value="yes">
+            <label for="web">Web</label>
+            <input type="checkbox" id="mobile" name="mobile" value="yes">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="desktop" name="desktop" value="yes">
+            <label for="desktop">Desktop</label>
 
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
